@@ -101,9 +101,6 @@ def game_over():
     streak_label.config(text=f'streak: {streak}')
     highscore_label.config(text=f'highscore: {highscore}')
 
-def on_minimize():
-    pass
-
 window = Tk()
 
 window.state('zoomed')
