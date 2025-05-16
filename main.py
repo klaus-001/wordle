@@ -57,7 +57,7 @@ def display_word():
             elif WORD_COUNT[guess[j]] > 1:
                 WORD_COUNT[guess[j]] -= 1
 
-    row +=1
+    row += 1
 
     word_entry.delete(0, END)
 
@@ -85,6 +85,8 @@ def next_level():
 
 def game_over():
     global row, WORD, streak, highscore
+
+    highscore = streak
 
     word_entry.delete(0, END)
 
